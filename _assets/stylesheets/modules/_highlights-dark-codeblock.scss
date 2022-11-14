@@ -13,22 +13,18 @@
     margin: 0;
   }
 }
-pre {
-  overflow: auto;
-}
 
 // Inline highlighting
 
 div.highlighter-rouge {
-  margin-bottom: 10px;
-}
-.highlighter-rouge {
   padding: 2px 4px;
   font-size: 14px;
-  color: #f92672;
+  color: #f8f8f2;
   background: #282828;
+  // background: darken($gray-darkest, 5);
   border: 1px solid $base-border-color;
   border-radius: 1px;
+  margin-bottom: 10px;
 }
 
 // Responsive
@@ -42,6 +38,7 @@ div.highlighter-rouge {
 
 // Highlighting types
 // =============================================================================
+
 .highlight pre {
   // background-color: darken($gray-darkest, 5);
   background-color: #282828;

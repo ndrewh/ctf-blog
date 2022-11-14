@@ -34,6 +34,9 @@
   {% if site.local_fonts %}
     {% asset fonts.css %}
   {% endif %}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@800&display=swap" rel="stylesheet">
 
   {% if site.theme_toggle == true %}
 
@@ -62,5 +65,6 @@
     {% endif %}
 
   {% endif %}
+  <link rel="stylesheet" type="text/css" href="{% asset tocbot.css @path%}">
 
 </head>

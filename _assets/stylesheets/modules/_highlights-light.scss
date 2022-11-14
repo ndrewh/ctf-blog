@@ -3,9 +3,8 @@
 // =============================================================================
 
 .highlight {
-  padding: 25px;
-  margin: 0;
-  margin: 30px 0;
+  padding: 0px 10px;
+  margin: 10px 0;
   overflow: auto;
   font-weight: 400;
   background: lighten($gray-lightest, 6);
@@ -13,6 +12,10 @@
   pre {
     margin: 0;
   }
+}
+
+pre {
+  overflow: auto;
 }
 
 // Inline highlighting
