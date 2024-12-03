@@ -1,9 +1,8 @@
 ---
-title: CSAW Quals 2022 - pwn/unsafe-linking
+title: pwn / unsafe-linking - CSAW Quals 2022
 layout: post
-permalink: /2022/csaw-quals-unsafe-linking
+permalink: /2022/csaw-quals-unsafe-linking/
 description: ""
-draft: true
 ---
 
 I played CSAW quals with PPP, and one of the more interesting challenges I worked on was "unsafe-linking". I worked on this with [babaisflag](https://ctftime.org/user/99027). I'm going to make this as detailed as possible, but if you want a summary of our exploit just look at the section headers. I'll also try to highlight the paths we tried that *didn't* end up working out for us.

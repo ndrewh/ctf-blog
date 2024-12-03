@@ -1,5 +1,5 @@
 ---
-title: BuckeyeCTF 2022 - rev/osu?
+title: rev / osu? - BuckeyeCTF 2022
 layout: post
 permalink: /2022/buckeyectf-osu/
 description: ""
@@ -776,7 +776,13 @@ elif b'\xf6\x87\xed\xaf\xdd\xd7\xcd\x81\xc4~\xa7\xdc\xcf\xcc\x81\xc4~n\x80' in c
 Now that we have all the constraints encoded into SAT, we can run the solver, and decode the message that would be displayed.
 
 ```py
-# A replay describes what note to play on each tick (-1 = play nothing)
+# We have a SAT problem, solve it
+solver = Solver('cadical', bootstrap_with=sat_constraints)
+assert solver.solve()
+soln = solver.get_model()
+
+# Look at all the variables in the solution and create a 'replay'
+# A 'replay' describes what note to play on each tick (-1 = play nothing)
 replay = [-1 for _ in range(max([n for n in notes_new]))] # one spot for each tick
 for i, n in enumerate(notes_new):
     options = options_for_note[i]
@@ -800,7 +806,7 @@ for i in range(0, len(bits), 8):
 flag = bytes(answer)
 ```
 
-Run the [final solve script](https://github.com/ndrewh/ctf-osu-game/tree/public/solve/disass.py) and you get the flag:
+Run the [final solve script](https://github.com/ndrewh/ctf-osu-game/tree/public/solve/solve.py) and you get the flag:
 
 ```
 buckeye{d0nt_t41k_t0_m3_0r_my_50000_thr34d_vm_3v3r_4g41n_btw_d1d_y0u_us3_SAT_0r_SMT}
