@@ -20,7 +20,7 @@ div.highlighter-rouge {
   padding: 2px 4px;
   font-size: 14px;
   color: #f8f8f2;
-  background: #282828;
+  background: #282c34;
   // background: darken($gray-darkest, 5);
   border: 1px solid $base-border-color;
   border-radius: 1px;
@@ -38,98 +38,99 @@ div.highlighter-rouge {
 
 // Highlighting types
 // =============================================================================
+.highlight,pre.highlight{background:#282c34;color:#abb2bf}.highlight pre{background:#282c34}.highlight .hll{background:#282c34}.highlight .c{color:#5c6370;font-style:italic}.highlight .err{color:#960050;background-color:#1e0010}.highlight .k{color:#c678dd}.highlight .l{color:#98c379}.highlight .n{color:#abb2bf}.highlight .o{color:#abb2bf}.highlight .p{color:#abb2bf}.highlight .cm{color:#5c6370;font-style:italic}.highlight .cp{color:#5c6370;font-style:italic}.highlight .c1{color:#5c6370;font-style:italic}.highlight .cs{color:#5c6370;font-style:italic}.highlight .ge{font-style:italic}.highlight .gs{font-weight:700}.highlight .kc{color:#c678dd}.highlight .kd{color:#c678dd}.highlight .kn{color:#c678dd}.highlight .kp{color:#c678dd}.highlight .kr{color:#c678dd}.highlight .kt{color:#c678dd}.highlight .ld{color:#98c379}.highlight .m{color:#d19a66}.highlight .s{color:#98c379}.highlight .na{color:#d19a66}.highlight .nb{color:#e5c07b}.highlight .nc{color:#e5c07b}.highlight .no{color:#e5c07b}.highlight .nd{color:#e5c07b}.highlight .ni{color:#e5c07b}.highlight .ne{color:#e5c07b}.highlight .nf{color:#abb2bf}.highlight .nl{color:#e5c07b}.highlight .nn{color:#abb2bf}.highlight .nx{color:#abb2bf}.highlight .py{color:#e5c07b}.highlight .nt{color:#e06c75}.highlight .nv{color:#e5c07b}.highlight .ow{font-weight:700}.highlight .w{color:#f8f8f2}.highlight .mf{color:#d19a66}.highlight .mh{color:#d19a66}.highlight .mi{color:#d19a66}.highlight .mo{color:#d19a66}.highlight .sb{color:#98c379}.highlight .sc{color:#98c379}.highlight .sd{color:#98c379}.highlight .s2{color:#98c379}.highlight .se{color:#98c379}.highlight .sh{color:#98c379}.highlight .si{color:#98c379}.highlight .sx{color:#98c379}.highlight .sr{color:#56b6c2}.highlight .s1{color:#98c379}.highlight .ss{color:#56b6c2}.highlight .bp{color:#e5c07b}.highlight .vc{color:#e5c07b}.highlight .vg{color:#e5c07b}.highlight .vi{color:#e06c75}.highlight .il{color:#d19a66}.highlight .gu{color:#75715e}.highlight .gd{color:#f92672}.highlight .gi{color:#a6e22e}
 
-.highlight pre {
-  // background-color: darken($gray-darkest, 5);
-  background-color: #282828;
-}
+// .highlight pre {
+//   // background-color: darken($gray-darkest, 5);
+//   background-color: #282828;
+// }
 
-.highlight .hll {
-  background-color: #282828;
-  // background-color: darken($gray-darkest, 5);
-}
+// .highlight .hll {
+//   background-color: #282828;
+//   // background-color: darken($gray-darkest, 5);
+// }
 
-.highlight table td { padding: 5px; }
-.highlight table pre { margin: 0; }
-.highlight, .highlight .w {
-  color: #fbf1c7;
-  background-color: #282828;
-}
-.highlight .err {
-  color: #fb4934;
-  background-color: #282828;
-  font-weight: bold;
-}
-.highlight .c, .highlight .cd, .highlight .cm, .highlight .c1, .highlight .cs {
-  color: #928374;
-  font-style: italic;
-}
-.highlight .cp {
-  color: #8ec07c;
-}
-.highlight .nt {
-  color: #fb4934;
-}
-.highlight .o, .highlight .ow {
-  color: #fbf1c7;
-}
-.highlight .p, .highlight .pi {
-  color: #fbf1c7;
-}
-.highlight .gi {
-  color: #b8bb26;
-  background-color: #282828;
-}
-.highlight .gd {
-  color: #fb4934;
-  background-color: #282828;
-}
-.highlight .gh {
-  color: #b8bb26;
-  font-weight: bold;
-}
-.highlight .k, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kv {
-  color: #fb4934;
-}
-.highlight .kc {
-  color: #d3869b;
-}
-.highlight .kt {
-  color: #fabd2f;
-}
-.highlight .kd {
-  color: #fe8019;
-}
-.highlight .s, .highlight .sb, .highlight .sc, .highlight .sd, .highlight .s2, .highlight .sh, .highlight .sx, .highlight .s1 {
-  color: #b8bb26;
-  font-style: italic;
-}
-.highlight .si {
-  color: #b8bb26;
-  font-style: italic;
-}
-.highlight .sr {
-  color: #b8bb26;
-  font-style: italic;
-}
-.highlight .se {
-  color: #fe8019;
-}
-.highlight .nn {
-  color: #8ec07c;
-}
-.highlight .nc {
-  color: #8ec07c;
-}
-.highlight .no {
-  color: #d3869b;
-}
-.highlight .na {
-  color: #b8bb26;
-}
-.highlight .m, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .il, .highlight .mo, .highlight .mb, .highlight .mx {
-  color: #d3869b;
-}
-.highlight .ss {
-  color: #83a598;
-}
+// .highlight table td { padding: 5px; }
+// .highlight table pre { margin: 0; }
+// .highlight, .highlight .w {
+//   color: #fbf1c7;
+//   background-color: #282828;
+// }
+// .highlight .err {
+//   color: #fb4934;
+//   background-color: #282828;
+//   font-weight: bold;
+// }
+// .highlight .c, .highlight .cd, .highlight .cm, .highlight .c1, .highlight .cs {
+//   color: #928374;
+//   font-style: italic;
+// }
+// .highlight .cp {
+//   color: #8ec07c;
+// }
+// .highlight .nt {
+//   color: #fb4934;
+// }
+// .highlight .o, .highlight .ow {
+//   color: #fbf1c7;
+// }
+// .highlight .p, .highlight .pi {
+//   color: #fbf1c7;
+// }
+// .highlight .gi {
+//   color: #b8bb26;
+//   background-color: #282828;
+// }
+// .highlight .gd {
+//   color: #fb4934;
+//   background-color: #282828;
+// }
+// .highlight .gh {
+//   color: #b8bb26;
+//   font-weight: bold;
+// }
+// .highlight .k, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kv {
+//   color: #fb4934;
+// }
+// .highlight .kc {
+//   color: #d3869b;
+// }
+// .highlight .kt {
+//   color: #fabd2f;
+// }
+// .highlight .kd {
+//   color: #fe8019;
+// }
+// .highlight .s, .highlight .sb, .highlight .sc, .highlight .sd, .highlight .s2, .highlight .sh, .highlight .sx, .highlight .s1 {
+//   color: #b8bb26;
+//   font-style: italic;
+// }
+// .highlight .si {
+//   color: #b8bb26;
+//   font-style: italic;
+// }
+// .highlight .sr {
+//   color: #b8bb26;
+//   font-style: italic;
+// }
+// .highlight .se {
+//   color: #fe8019;
+// }
+// .highlight .nn {
+//   color: #8ec07c;
+// }
+// .highlight .nc {
+//   color: #8ec07c;
+// }
+// .highlight .no {
+//   color: #d3869b;
+// }
+// .highlight .na {
+//   color: #b8bb26;
+// }
+// .highlight .m, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .il, .highlight .mo, .highlight .mb, .highlight .mx {
+//   color: #d3869b;
+// }
+// .highlight .ss {
+//   color: #83a598;
+// }
